@@ -12,7 +12,7 @@ basic.forever(function () {
     blink = control.millis()
     farbe = 0
     strip.showColor(neopixel.colors(NeoPixelColors.Green))
-    while (maqueen.Ultrasonic(PingUnit.Centimeters) > 10 && control.millis() < moveStart + zeit * 1000) {
+    while (maqueen.Ultrasonic(PingUnit.Centimeters) > 20 && control.millis() < moveStart + zeit * 1000) {
         if (blink < control.millis() - 1000) {
             if (farbe == 0) {
                 strip.showColor(neopixel.colors(NeoPixelColors.Blue))
